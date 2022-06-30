@@ -7,7 +7,7 @@ URL = "https://github.com/ooguz/turkce-kufur-karaliste/blob/master/karaliste.txt
 source = requests.get(URL).text
 soup = BeautifulSoup(source, 'lxml')
 
-csv_file = open('TurkceArgoKelimeler.csv', 'a', encoding="utf-16", newline="")
+csv_file = open('TurkishBlackList.csv', 'a', encoding="utf-16", newline="")
 csv_writer = csv.writer(csv_file)
 
 table = soup.find('table')

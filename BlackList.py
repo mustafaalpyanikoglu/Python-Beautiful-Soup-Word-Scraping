@@ -14,7 +14,7 @@ data = soup.find_all("p strong")
 p_strong_elements = []
 state = False
 
-csv_file = open('TurkceArgoKelimeler.csv', 'w', encoding="utf-16", newline="")
+csv_file = open('TurkishBlackList.csv', 'w', encoding="utf-16", newline="")
 csv_writer = csv.writer(csv_file)
 csv_writer.writerow([''])
 
